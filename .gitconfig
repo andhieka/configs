@@ -1,0 +1,35 @@
+[user]
+        name = Andhieka Putra
+        email = andhieka.putra@gmail.com
+[color]
+        diff = true
+        ui = true
+[push]
+        default = matching
+[alias]
+        co = checkout
+        ec = config --global -e
+        ci = commit
+        st = status
+        br = branch
+        lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+
+[merge]
+        summary = true
+
+[push]
+        default = current
+
+[branch "master"]
+        # rebase = true
+
+[core]
+        autocrlf = input
+	excludesfile = ~/.gitignore_global
+
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /opt/homebrew-cask/Caskroom/sourcetree/2.0.5.2/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
