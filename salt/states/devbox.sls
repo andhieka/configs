@@ -1,6 +1,9 @@
 vim:
   pkg.installed: []
 
+guake:
+  pkg.installed: []
+
 #/home/andhieka/.vimrc:
 #  file:
 #    - managed
