@@ -4,6 +4,15 @@ vim:
 guake:
   pkg.installed: []
 
+ssl_development:
+  pkg.installed:
+    - pkgs:
+      - build-essential
+      - libssl-dev
+      - zlib1g-dev
+      - libbz2-dev
+      - libsqlite3-dev
+
 #/home/andhieka/.vimrc:
 #  file:
 #    - managed
